@@ -1,0 +1,148 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.bodyBG{background-color: var(--DarkGreen);}
+
+:root{
+    --DarkGreen: #071e22;
+    --mdGreen: #1d7874;
+    --LightGreen: #679289;
+    --Peach: #F4c095;
+    --Red: #ee2e31;
+    --info: #0dcaf0
+    --infohover: #11b0d0}
+    
+
+/*Navbar*/
+nav{background-color: var(--mdGreen);}
+#Logo{
+    font-family: "Sofia", sans-serif;
+    font-size: 1.8rem;}
+    #Logo:hover {
+        color: #fff;
+        scale: 1.2;
+        transition: 0.3s ease-out;
+        text-shadow: 1px 2px #1e1e21;}
+#NavMenu a{color: #fff;}
+#NavMenu a:hover{
+    color: #000;
+    text-decoration: underline;
+    transition: 0.4s ease;}
+
+/*Hero*/
+#HeroBG{
+    background-image: url(teherh.jpg);
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 0px 0px 15px 15px;}
+#Herocon{
+    margin-top: 12rem;
+    margin-left: 18rem;}
+    #Herocon > span {
+        text-shadow: 2px 2px rgb(180, 176, 176);}
+
+/*Section*/
+.odd{
+    height: 400px;
+    background-color: var(--LightGreen);
+    border-radius: 15px;}
+    .oddLast{border-radius: 15px 15px 0px 0px !important;}
+.oddWEB{height: 700px;}
+.even{
+    height: 400px;
+    background-color: var(--Peach);
+    border-radius: 15px;}
+section img:hover{
+    scale: 1.2;
+    transition: 0.2s ease-in;}
+section h1{
+    font-family: "Sofia", sans-serif;
+    cursor: default;}
+
+#WEBimg > img {max-height: 180px;}
+#LineStickers > img,
+#Something > img{
+    max-height: 180px;
+    object-fit: contain;}
+#front img {width: 160px; height: 180px;}
+#future img {width: 160px; height: 180px;}
+
+
+/*Footer*/
+footer{
+    height: 300px;
+    background-color: var(--mdGreen);}
+footer h1{
+    font-family: "Sofia", sans-serif;
+    color: var(--Red);
+    text-shadow: 1px 3px #1e1e21;}
+#contact i {font-size: 3rem;}
+#contact img{max-width: 50px;}
+#contact a{padding-left: 6rem;}
+
+.Reff{width: 40% !important;}
+#Reff a{padding-top: 0.5rem;}
+
+
+
+/*Media Query*/
+@media only screen and (max-width: 576px) {
+    /*Hero Section*/
+    #Herocon{
+        margin-top: 10rem;
+        margin-left: 12rem;
+        width: 50% !important;}
+    .odd {height: 970px;}
+    .even {height: 680px;}
+    /*Footer Section*/
+    footer{height: 790px;}
+    #contact a{padding-left: 6rem;}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) /*sm*/ {
+    /*Hero Section*/
+    #Herocon{
+        margin-top: 10rem;
+        margin-left: 12rem;
+        width: 50% !important;}
+    .odd {height: 970px;}
+    .oddWEB {height: 1360px;}
+    .even {height: 680px;}
+    
+
+    /*Footer Section*/
+    footer{height: 790px;}
+    #contact a{padding-left: 8rem;}
+    .Reff{width: 35% !important;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) /*md*/ {
+    /*Hero Section*/
+    #Herocon{
+        margin-top: 10.5rem;
+        margin-left: 12rem;
+        width: 30% !important;}
+    .oddWEB {height: 1080px;}
+
+    /*Footer Section*/
+    #contact a{padding-left: 0;}
+    .Reff{width: 80% !important;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) /*lg*/ {
+    /*Hero Section*/
+    #Herocon{
+        margin-top: 10.5rem;
+        margin-left: 12rem;
+        width: 32% !important;}
+
+    /*Footer Section*/
+    #contact a{padding-left: 3rem;}
+    .Reff{width: 60% !important;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) /*xl*/ {
+     /*Footer Section*/
+     #contact a{padding-left: 3rem;}
+     .Reff{width: 50% !important;}
+}

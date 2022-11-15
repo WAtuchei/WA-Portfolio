@@ -1,0 +1,48 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{background-image: url(BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+:root{
+    --DarkGreen: #071e22;
+    --mdGreen: #1d7874;
+    --LightGreen: #679289;
+    --Peach: #F4c095;
+    --Red: #ee2e31;
+    --info: #0dcaf0
+    --infohover: ##0ba5c4}
+
+/*Navbar*/
+nav{background-color: var(--mdGreen);}
+#Logo{
+    font-family: "Sofia", sans-serif;
+    font-size: 1.8rem;}
+    #Logo:hover{
+        color: #fff;
+        scale: 1.2;
+        transition: 0.3s ease-out;
+        text-shadow: 1px 2px #1e1e21;}
+
+/*Form Area*/
+#FormArea{
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+#LogForm{
+    height: 450px;
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    grid-template-rows: 20% auto 20%;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 5%;
+    box-shadow: 3px 3px 2px 3px #0a0a0a65;}
+#LogForm > h1{
+    grid-column: 2;
+    font-family: "Sofia", sans-serif;}
+
+.con{
+    grid-column: 2;
+    grid-row: 2;}
