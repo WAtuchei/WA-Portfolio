@@ -30,7 +30,7 @@ nav{background-color: var(--mdGreen);}
 
 /*Hero*/
 #HeroBG{
-    background-image: url(teherh.jpg);
+    background-image: url(img/teherh.jpg);
     background-size: cover;
     height: 400px;
     overflow: hidden;
