@@ -86,13 +86,29 @@ footer h1{
 
 
 /*Media Query*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 400px) {
+      /*Hero Section*/
+      #Herocon{
+        margin-top: 10rem;
+        margin-left: 12rem;
+        width: 50% !important;}
+    .odd {height: 970px;}
+    .oddWEB {height: 2420px;}
+    .even {height: 680px;}
+    /*Footer Section*/
+    footer{height: 790px;}
+    .Reff {width: 48% !important;}
+    #contact a{padding-left: 3rem;}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 576px) {
     /*Hero Section*/
     #Herocon{
         margin-top: 10rem;
         margin-left: 12rem;
         width: 50% !important;}
     .odd {height: 970px;}
+    .oddWEB {height: 2420px;}
     .even {height: 680px;}
     /*Footer Section*/
     footer{height: 790px;}
